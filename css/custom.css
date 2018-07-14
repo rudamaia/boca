@@ -1,0 +1,44 @@
+/* Your custom css code goes here */
+.probootstrap-right-nav i {
+  font-size: 20px;
+}
+.probootstrap-footer.probootstrap-bg {
+  padding: 50px 0 0 0;
+}
+.probootstrap-footer.probootstrap-bg a {
+  color: #fab500;
+}
+.rodape-info {
+  margin-bottom: 20px;
+}
+.probootstrap-right-nav li a {
+  color: rgba(255,255,255,.7);
+}
+.probootstrap-right-nav li a:hover, .probootstrap-main-nav li a:hover {
+  color: #fab500;
+}
+.probootstrap-mobile-menu-active .probootstrap-main-nav {
+  margin-top: 0;
+}
+.probootstrap-footer-widget h4 {
+  margin-top: 0;
+}
+.gmap iframe {
+  border: 0;
+  opacity: 0.3;
+  transition: opacity 0.2s;
+}
+.gmap:hover iframe {
+  opacity: 1;
+}
+.probootstrap-logo {
+  position: relative;
+  float: none;
+  text-align: center;
+  height: 0;
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .probootstrap-logo img{
+    margin-left: 65px;
+  }
+}

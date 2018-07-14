@@ -66,6 +66,15 @@
 
 
 		// click burger menu
+		$('.probootstrap-main-nav li a').on('click', function(e){
+			if ($('body').hasClass('show')) {
+				$('.probootstrap-burger-menu').removeClass('active');
+				$('body').removeClass('show');
+			} else {
+				$('.probootstrap-burger-menu').addClass('active');
+				$('body').addClass('show');
+			}
+		});
 		$('.probootstrap-burger-menu').on('click', function(e){
 			e.preventDefault();
 			if ($('body').hasClass('show')) {

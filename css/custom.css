@@ -1,6 +1,12 @@
 /* Your custom css code goes here */
+body {
+  background: #383838;
+}
 .probootstrap-right-nav i {
   font-size: 20px;
+}
+.probootstrap-footer {
+  border-top: none;
 }
 .probootstrap-footer.probootstrap-bg {
   padding: 50px 0 0 0;
@@ -11,11 +17,13 @@
 .rodape-info {
   margin-bottom: 20px;
 }
-.probootstrap-right-nav li a {
-  color: rgba(255,255,255,.7);
-}
-.probootstrap-right-nav li a:hover, .probootstrap-main-nav li a:hover {
+.probootstrap-right-nav li a, .probootstrap-main-nav li a {
   color: #fab500;
+}
+
+.probootstrap-right-nav li a:hover, .probootstrap-main-nav li a:hover {
+  color: rgba(255,255,255,.7);
+  cursor: pointer;
 }
 .probootstrap-mobile-menu-active .probootstrap-main-nav {
   margin-top: 0;
@@ -27,6 +35,7 @@
   border: 0;
   opacity: 0.3;
   transition: opacity 0.2s;
+  margin-bottom: 30px;
 }
 .gmap:hover iframe {
   opacity: 1;
@@ -37,8 +46,39 @@
   text-align: center;
   height: 0;
 }
+.probootstrap-footer.probootstrap-bg:before {
+  background: #00000061;
+}
+.label-warning {
+    background: #fab500;
+}
+.icon-serras:before, .icon-maquinas:before, .icon-brocas:before {
+  background: url('../img/serras.png') no-repeat center center;
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+}
+.icon-maquinas:before {
+  background-image: url('../img/maquinas.png');
+  width: 65px;
+}
+.icon-brocas:before {
+  background-image: url('../img/brocas.png');
+  width: 45px;
+}
+.service.left-icon {
+  box-shadow: none;
+  margin: 50px;
+}
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .probootstrap-logo img{
     margin-left: 65px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .probootstrap-burger-menu i::after, .probootstrap-burger-menu i::before, .probootstrap-burger-menu i {
+    background: #fab500;
   }
 }
